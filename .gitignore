@@ -93,3 +93,7 @@ ENV/
 
 # dev docker compose
 NOCOMMIT-docker-compose.yml
+
+# SSOTest related
+SSOTest/deployment
+
