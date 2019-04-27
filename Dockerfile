@@ -4,14 +4,13 @@
 # Author: Mendix Digital Ecosystems, digitalecosystems@mendix.com
 # Version: 2.0.0
 # ARG ROOTFS_IMAGE=mendix/rootfs
-# FROM mendix/rootfs
-
-FROM ${ROOTFS_IMAGE}
+FROM mendix/rootfs
+#FROM ${ROOTFS_IMAGE}
 LABEL Author="Mendix Digital Ecosystems"
 LABEL maintainer="digitalecosystems@mendix.com"
 
 # Build-time variables
-ARG BUILD_PATH=project
+ARG BUILD_PATH=SSOTest
 ARG DD_API_KEY
 # CF buildpack version
 ARG CF_BUILDPACK=master
