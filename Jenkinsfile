@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build --build-arg BUILD_PATH="SSOTest" -t ssotest:v1 .'
+        sh '/usr/bin/docker build --build-arg BUILD_PATH="SSOTest" -t ssotest:v1 .'
       }
     }
   }
