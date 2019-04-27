@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  labels:
+    app: ssotest
+  name: buildconfig-ssotest
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: ssotest:latest
+  resources: {}
+  source:
+    git:
+      ref: master
+      uri: https://github.com/weifang993/docker-mendix-buildpack.git
+    type: Git
+  strategy:
+    dockerStrategy:
+      forcePull: true 
+      noCache: true
+      buildArgs:
+        - name: ROOTFS_IMAGE
+          value: mendix/rootfs
+        - name: BUILD_PATH
+          value: SSOTest
+    type: Docker
