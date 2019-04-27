@@ -4,14 +4,14 @@
 # Author: Mendix Digital Ecosystems, digitalecosystems@mendix.com
 # Version: 2.0.0
 # ARG ROOTFS_IMAGE=mendix/rootfs
+# FROM mendix/rootfs
 
-# FROM ${ROOTFS_IMAGE}
-FROM mendix/rootfs
+FROM ${ROOTFS_IMAGE}
 LABEL Author="Mendix Digital Ecosystems"
 LABEL maintainer="digitalecosystems@mendix.com"
 
 # Build-time variables
-ARG BUILD_PATH=SSOTest
+ARG BUILD_PATH=project
 ARG DD_API_KEY
 # CF buildpack version
 ARG CF_BUILDPACK=master
@@ -47,8 +47,13 @@ RUN "/buildpack/compilation" /build /cache &&\
     chown -R mendix /buildpack /build /.java /root 
 
 # Copy start scripts
-COPY --chown=mendix:mendix scripts/startup /build
-COPY --chown=mendix:mendix scripts/vcap_application.json /build
+# COPY --chown=mendix:mendix scripts/startup /build
+# COPY --chown=mendix:mendix scripts/vcap_application.json /build
+
+COPY scripts/startup /build
+COPY scripts/vcap_application.json /build
+RUN chown -R mendix:mendix /build
+
 WORKDIR /build
 
 USER mendix
