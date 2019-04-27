@@ -11,7 +11,7 @@ LABEL Author="Mendix Digital Ecosystems"
 LABEL maintainer="digitalecosystems@mendix.com"
 
 # Build-time variables
-ARG BUILD_PATH=project
+ARG BUILD_PATH=SSOTest
 ARG DD_API_KEY
 # CF buildpack version
 ARG CF_BUILDPACK=master
