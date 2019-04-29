@@ -99,5 +99,6 @@ SSOTest/deployment/data
 SSOTest/deployment/log
 SSOTest/deployment/run
 SSOTest/deployment/model/lib
+SSOTest/deployment/web/pages
 
 
