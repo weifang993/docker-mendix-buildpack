@@ -36,7 +36,7 @@ public class X509Certificate extends system.proxies.FileDocument
 			metaName = s;
 		}
 
-		@Override
+		@java.lang.Override
 		public java.lang.String toString()
 		{
 			return metaName;
@@ -58,7 +58,7 @@ public class X509Certificate extends system.proxies.FileDocument
 	/**
 	 * @deprecated Use 'X509Certificate.load(IContext, IMendixIdentifier)' instead.
 	 */
-	@Deprecated
+	@java.lang.Deprecated
 	public static saml20.proxies.X509Certificate initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixIdentifier mendixIdentifier) throws com.mendix.core.CoreException
 	{
 		return saml20.proxies.X509Certificate.load(context, mendixIdentifier);
@@ -303,7 +303,7 @@ public class X509Certificate extends system.proxies.FileDocument
 		getMendixObject().setValue(context, MemberNames.Base64.toString(), base64);
 	}
 
-	@Override
+	@java.lang.Override
 	public boolean equals(Object obj)
 	{
 		if (obj == this)
@@ -317,7 +317,7 @@ public class X509Certificate extends system.proxies.FileDocument
 		return false;
 	}
 
-	@Override
+	@java.lang.Override
 	public int hashCode()
 	{
 		return getMendixObject().hashCode();
@@ -335,8 +335,8 @@ public class X509Certificate extends system.proxies.FileDocument
 	 * @return String GUID from this object, format: ID_0000000000
 	 * @deprecated Use getMendixObject().getId().toLong() to get a unique identifier for this object.
 	 */
-	@Override
-	@Deprecated
+	@java.lang.Override
+	@java.lang.Deprecated
 	public java.lang.String getGUID()
 	{
 		return "ID_" + getMendixObject().getId().toLong();

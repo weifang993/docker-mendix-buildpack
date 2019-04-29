@@ -29,7 +29,7 @@ public class CreateSSOMetadataFile extends CustomJavaAction<java.lang.Boolean>
 		this.__spMetadata = spMetadata;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		this.spMetadata = __spMetadata == null ? null : saml20.proxies.SPMetadata.initialize(getContext(), __spMetadata);
@@ -51,7 +51,7 @@ public class CreateSSOMetadataFile extends CustomJavaAction<java.lang.Boolean>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "CreateSSOMetadataFile";

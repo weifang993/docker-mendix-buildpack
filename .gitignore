@@ -95,6 +95,8 @@ ENV/
 NOCOMMIT-docker-compose.yml
 
 # SSOTest related
-SSOTest/deployment
+SSOTest/deployment/data
+SSOTest/deployment/log
+SSOTest/deployment/run
 
 

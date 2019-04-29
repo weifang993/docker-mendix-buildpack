@@ -27,7 +27,7 @@ public class DelegatedAuthentication extends CustomJavaAction<java.lang.Boolean>
 		this.ResourceURL = ResourceURL;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		this.SAMLSessionParam = __SAMLSessionParam == null ? null : saml20.proxies.SAMLSession.initialize(getContext(), __SAMLSessionParam);
@@ -42,7 +42,7 @@ public class DelegatedAuthentication extends CustomJavaAction<java.lang.Boolean>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "DelegatedAuthentication";

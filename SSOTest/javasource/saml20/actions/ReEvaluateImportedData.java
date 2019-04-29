@@ -33,7 +33,7 @@ public class ReEvaluateImportedData extends CustomJavaAction<java.lang.Boolean>
 		this.__IdPFile = IdPFile;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		this.IdPFile = __IdPFile == null ? null : saml20.proxies.IdPMetadata.initialize(getContext(), __IdPFile);
@@ -82,7 +82,7 @@ public class ReEvaluateImportedData extends CustomJavaAction<java.lang.Boolean>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "ReEvaluateImportedData";

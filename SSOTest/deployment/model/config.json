@@ -1,0 +1,20 @@
+{
+  "Configuration": {
+    "DatabaseName": "testsso",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "None"
+  },
+  "Constants": {
+    "SAML20.KeystorePassword": "R@nd0mP4$$w0rdFOrK3ySt0r3",
+    "SAML20.SSOLandingPage": "index.html",
+    "SAML20.DefaultLogoutPage": "/SSO/",
+    "SAML20.DefaultLoginPage": " ",
+    "SAML20.BindingURI_Redirect": "False"
+  },
+  "AdminPassword": "Password1!"
+}
