@@ -15,7 +15,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/
 lib64/
 parts/
 sdist/
@@ -98,5 +98,6 @@ NOCOMMIT-docker-compose.yml
 SSOTest/deployment/data
 SSOTest/deployment/log
 SSOTest/deployment/run
+SSOTest/deployment/model/lib
 
 
