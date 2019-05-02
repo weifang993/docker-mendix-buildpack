@@ -1,4 +1,4 @@
-def templatePath = '/home/wei/Documents/mendix/minishift/TemplateStatefulSet-04-27-2019/ssotest-statefulset-template.yaml' 
+def templatePath = 'mendix' 
 def templateName = 'mendix' 
 
 pipeline {
