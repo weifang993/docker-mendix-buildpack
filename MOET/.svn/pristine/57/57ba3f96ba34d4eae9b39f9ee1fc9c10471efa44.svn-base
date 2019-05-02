@@ -1,0 +1,5 @@
+<div class="cpcCheckboxWithLinks" data-dojo-attach-point="widgetBase">
+    <input type="checkbox" data-dojo-attach-point="checkBoxInput" /> 
+    <label class="control-label" data-dojo-attach-point="checkBoxLabel"><a data-dojo-attach-point="checkBoxLink" target="_blank"></a></label> 
+    
+</div>

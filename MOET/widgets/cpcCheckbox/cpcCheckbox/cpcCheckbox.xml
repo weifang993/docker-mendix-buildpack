@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="cpcCheckbox.widget.cpcCheckbox" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Checkbox</name>
+    <description>Single checkbox with a label</description>
+
+    <icon />
+
+    <properties>
+			<property key="dataSource" type="attribute" required="false">
+				<caption>Attribute:</caption>
+				<category>Data source</category>
+				<description></description> 
+				<attributeTypes>
+					<attributeType name="Boolean"/>
+				</attributeTypes>
+			</property>
+
+			<property key="labelTextViaAttribute" type="attribute" required="true">
+				<caption>Label text:</caption>
+				<category>Display</category>
+				<description></description> 
+				<attributeTypes>
+					<attributeType name="String"/> 
+				</attributeTypes>
+			</property>
+			
+			<property key="valueOfIdAndFor" type="attribute"  required="true">
+				<caption>Label Attribute:</caption>
+				<category>Display</category>
+				<description>Content for Label attribute FOR and Input ID. Needed for accessability</description> 
+				<attributeTypes>
+					<attributeType name="String"/>
+				</attributeTypes>
+			</property>
+
+			<property key="mfToExecute" type="microflow" required="false" defaultValue="">
+				<caption>On change:</caption>
+				<category>Events</category>
+				<description></description>
+				<returnType type="Void"></returnType>
+			</property>
+
+    </properties>
+</widget>

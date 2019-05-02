@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="StickyWidget.widget.StickyWidget" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>StickyWidget</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+<properties>
+		<property key="clickType" type="enumeration" defaultValue="mf">
+            <caption>Click type</caption>
+            <category>Behavior</category>
+            <description>Select what to do on-click
+            </description>
+            <enumerationValues>
+                <enumerationValue key="mf">Microflow</enumerationValue>
+                <enumerationValue key="nf">Nanoflow</enumerationValue>                
+                <enumerationValue key="url">Link</enumerationValue>
+                <enumerationValue key="page">Page</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="mfToExecute" type="microflow" required="false" defaultValue="">
+            <caption>Microflow</caption>
+            <category>Microflow</category>
+            <description>The microflow to execute on click.</description>
+            <returnType type="Void" />
+        </property>
+</properties>
+</widget>

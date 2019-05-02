@@ -1,0 +1,92 @@
+
+
+
+<link rel="stylesheet" href="https://www.canadapost.ca/cpc/assets/cpc/css/cpc-main.css" />
+<link rel="stylesheet" href="https://www.canadapost.ca/cpc/assets/cpc/css/lib/foundation.css" />
+
+    <div class="cpc-skip-nav"><a href="#main-content" class="skip-nav" target="_self"><span class="cpc-skip-nav-label">Skip to Main Content</span></a></div>
+    <div id="mainNav" class="cpc-nav" data-suppress-product-nav="true" data-suppress-toolbar="true" data-current-page="tools"><div class="noindex">
+
+
+<div role="navigation" aria-label="Main navigation" class="cpc-nav-suppress-product-nav">
+<div class="top-bar micro-business-nav show-for-large-up" data-topbar="">
+
+ <script>
+  function toggleLanguage() {
+	var lang = document.getElementById("langChoice").firstChild.innerHTML;
+	alert(document.getElementById("support").firstChild.innerHTML);
+	if (lang=='FR') 
+	{ document.getElementById("langChoice").firstChild.innerHTML = 'EN';
+		document.getElementById("support").firstChild.innerHTML = 'Soutien';
+		document.getElementById("about").firstChild.innerHTML = 'A notre sujet';
+		document.getElementById("shop").firstChild.innerHTML = 'Magasiner';
+		document.getElementById("signin").firstChild.innerHTML = 'Ouvrir une session';
+		document.getElementById("personal").firstChild.innerHTML = 'Personnel';
+		document.getElementById("business").firstChild.innerHTML = 'Entreprise';
+		document.getElementById("myaccount").firstChild.innerHTML = 'Mon compte';
+		document.getElementById("tools").firstChild.innerHTML = 'Outils';
+		document.getElementById("search").firstChild.innerHTML = 'Recherche';
+	}
+	if (lang=='EN')
+	{ document.getElementById("langChoice").firstChild.innerHTML = 'FR';
+		document.getElementById("support").firstChild.innerHTML = 'Support';
+		document.getElementById("about").firstChild.innerHTML = 'About Us';
+		document.getElementById("shop").firstChild.innerHTML = 'Shop';
+		document.getElementById("signin").firstChild.innerHTML = 'Sign in';
+		document.getElementById("personal").firstChild.innerHTML = 'Personal';
+		document.getElementById("business").firstChild.innerHTML = 'Business';
+		document.getElementById("myaccount").firstChild.innerHTML = 'My Account';
+		document.getElementById("tools").firstChild.innerHTML = 'Tools';
+				document.getElementById("search").firstChild.innerHTML = 'Search';
+}
+	}
+</script>
+      
+
+<section class="top-bar-section">
+    <ul class="right">
+      
+      <li id=support><a href="https://www.canadapost.ca/web/en/pages/support/default.page"  class="chat-link">Support</a></li>
+    
+      <li id=about><a href="https://www.canadapost.ca/web/en/pages/aboutus/default.page"  class="">About us</a></li>
+    
+      <li id=shop ><a href="https://www.canadapost.ca/shop/shop.jsf" id=shop class="">Shop</a></li>
+    
+
+      <li class="language-toggle" id=langChoice><a href="#" onclick="toggleLanguage()">FR</a></li>
+    
+      <li class="top-bar-separator"></li>
+      
+      <li class="sign-in toggle-signin-trigger" role="signin" aria-label="Sign in" id=signin ><a href="#" data-cpc-modal-id="#sign-in-modal" id="signinModalLarge" role="button">Sign in</a></li>
+    
+    </ul>
+  </section></div>
+
+    <div class="sticky  utility-business-nav-sticky-container">
+      <div class="top-bar utility-business-nav show-for-large-up" data-topbar="" data-options="sticky_on: large;is_hover: false">
+        <ul class="title-area">
+          <li>
+            <a href="https://www.canadapost.ca/cpc/en"><img src="https://www.canadapost.ca/cpc/assets/cpc/img/logos/cpc-main-logo.svg" alt="Canada Post/Postes Canada"></a>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        
+      <section class="top-bar-section">
+          <ul class="left">
+            
+      <li id=personal><a href="https://www.canadapost.ca/cpc/en/personal.page" >Personal</a></li>
+    
+      <li id=business><a href="https://www.canadapost.ca/cpc/en/business.page" class="">Business</a></li>
+    
+      <li aria-label="undefined" id=myaccount><a href="https://www.canadapost.ca/dash/en"   data-cpc-modal-id="#sign-in-modal" data-cpc-modal-suppress-when-sso="true">My Account</a></li>
+    
+      <li id=tools><a href="https://www.canadapost.ca/cpc/en/tools.page" id=tools >Tools</a></li>
+    
+          </ul>
+          <ul class="right utility-business-nav-search">
+            <li role="search" aria-label="Search" id=search ><a id="searchBtn" href="#" class="btn btn-search" role="button">Search</a></li>
+          </ul>
+        </section></div>
+    </div>
+    
+</div>
