@@ -1,4 +1,0 @@
-<div class="cpcCheckbox" data-dojo-attach-point="widgetBase">
-    <input type="checkbox" data-dojo-attach-point="checkBoxInput" /> 
-    <label class="control-label" data-dojo-attach-point="checkBoxLabel"></label> 
-</div>

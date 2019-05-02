@@ -1,2 +1,0 @@
-@import "custom-variables";
-@import '~pretty-checkbox/src/pretty-checkbox.scss';
