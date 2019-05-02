@@ -1,5 +1,5 @@
-def templatePath = 'https://raw.githubusercontent.com/openshift/nodejs-ex/master/openshift/templates/nodejs-mongodb.json' 
-def templateName = 'nodejs-mongodb-example' 
+def templatePath = '/home/wei/Documents/mendix/minishift/TemplateStatefulSet-04-27-2019/ssotest-statefulset-template.yaml' 
+def templateName = 'mendix' 
 
 pipeline {
   agent any
@@ -32,6 +32,7 @@ pipeline {
         }
       }
     }
+    /*
     stage('create') {
       steps {
         script {
@@ -43,6 +44,7 @@ pipeline {
         }
       }
     }
+    */
     stage('build') {
       steps {
         script {
@@ -59,6 +61,8 @@ pipeline {
         }
       }
     }
+
+    /*
     stage('deploy') {
       steps {
         script {
@@ -86,5 +90,6 @@ pipeline {
         }
       }
     }
+    */
   }
 }
