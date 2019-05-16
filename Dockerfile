@@ -12,8 +12,9 @@ LABEL maintainer="digitalecosystems@mendix.com"
 # Build-time variables
 ARG BUILD_PATH=MOET
 ARG DD_API_KEY
-# CF buildpack version
+# CF buildpack version 
 ARG CF_BUILDPACK=master
+# ARG CF_BUILDPACK=v2.2.8 
 
 # Each comment corresponds to the script line:
 # 1. Create all directories needed by scripts
