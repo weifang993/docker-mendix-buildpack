@@ -3,9 +3,8 @@
 #
 # Author: Mendix Digital Ecosystems, digitalecosystems@mendix.com
 # Version: 2.1.0
-ARG ROOTFS_IMAGE=mendix/rootfs
-
-FROM ${ROOTFS_IMAGE}
+# ARG ROOTFS_IMAGE=mendix/rootfs
+FROM mendix/rootfs
 LABEL Author="Mendix Digital Ecosystems"
 LABEL maintainer="digitalecosystems@mendix.com"
 
