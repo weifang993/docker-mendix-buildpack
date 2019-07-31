@@ -1,7 +1,3 @@
-# Overview
-
-This project is forked from Mendix. SSOTest is integrated with Keycloak 4.8. 
-
 # Docker Mendix Buildpack
 
 [![Build Status](https://travis-ci.org/mendix/docker-mendix-buildpack.svg?branch=master)](https://travis-ci.org/mendix/docker-mendix-buildpack)
@@ -15,7 +11,7 @@ Open a terminal and run the following code:
 > Important note: always provide `<TAG>` value to guarantee consistent builds. List of tags is available [here](https://github.com/mendix/docker-mendix-buildpack/tags).
 
 ```
-git clone --branch <TAG> https://github.com/mendix/docker-mendix-buildpack
+git clone --branch <TAG> --config core.autocrlf=false https://github.com/mendix/docker-mendix-buildpack
 cd docker-mendix-buildpack
 make get-sample
 make build-image
@@ -51,10 +47,6 @@ docker build
   --build-arg CF_BUILDPACK=<cf-buildpack-version> \
   --tag mendix/mendix-buildpack:v1.2 .
 ```
-To build SSOTest-main:
-
-Make sure your project source dir is named in "BUILD_PATH" below.
-`sudo docker build --build-arg BUILD_PATH="SSOTest" -t ssotest:v1 .`
 
 For build you can provide next arguments:
 
