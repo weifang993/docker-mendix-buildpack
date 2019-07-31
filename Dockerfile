@@ -30,9 +30,11 @@ RUN mkdir -p /opt/mendix/buildpack /opt/mendix/build &&\
    chmod g+w /etc/passwd
 
 # Copy python scripts which execute the buildpack (exporting the VCAP variables)
-COPY --chown=mendix:root scripts/compilation /opt/mendix/buildpack
+COPY scripts/compilation /opt/mendix/buildpack
+RUN chown -R mendix:root /opt/mendix/buildpack
 # Copy project model/sources
-COPY --chown=mendix:root $BUILD_PATH /opt/mendix/build
+COPY $BUILD_PATH /opt/mendix/build
+RUN chown -R mendix:root /opt/mendix/build
 
 # Add the buildpack modules
 ENV PYTHONPATH "/opt/mendix/buildpack/lib/"
@@ -53,8 +55,10 @@ RUN mkdir -p /tmp/buildcache &&\
     chmod -R g+rwX /opt/mendix
 
 # Copy start scripts
-COPY --chown=mendix:root scripts/startup /opt/mendix/build
-COPY --chown=mendix:root scripts/vcap_application.json /opt/mendix/build
+COPY scripts/startup /opt/mendix/build
+COPY scripts/vcap_application.json /opt/mendix/build
+RUN chown -R mendix:root /opt/mendix/build
+
 WORKDIR /opt/mendix/build
 
 USER mendix
